@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For Mi Amor ♡</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #201c1b;
+      color: #342b27;
+      font-family: Georgia, serif;
+    }
+
+    .letter {
+      width: 100%;
+      max-width: 520px;
+      padding: 38px 28px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top left,
+          #d7c7a9, transparent 65%),
+        #c6b394;
+      border: 1px solid #95816a;
+      box-shadow: 0 15px 55px #0006;
+      position: relative;
+    }
+
+    .label {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      opacity: .7;
+    }
+
+    .heart {
+      font-size: 35px;
+      margin: 25px 0 10px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 8vw, 48px);
+      font-weight: normal;
+      margin: 12px 0 22px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .divider {
+      margin: 25px auto;
+      width: 70px;
+      border-top: 1px solid #8b7962;
+    }
+
+    button {
+      padding: 13px 19px;
+      margin: 7px 3px;
+      border: 1px solid #5d4940;
+      background: #48372f;
+      color: #f1e4cf;
+      font: inherit;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #30231f;
+    }
+
+    .secondary {
+      background: transparent;
+      color: #48372f;
+    }
+
+    #reveal {
+      display: none;
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px dashed #8b7962;
+    }
+
+    .signature {
+      margin-top: 30px;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="letter">
+    <div class="label">A little letter for my favourite person</div>
+    <div class="heart">♡</div>
+
+    <h1>Mi amor,</h1>
+
+    <p>
+      First, I owe you an apology for yesterday.
+      I'm sorry I missed it. I know a cute little
+      website doesn't magically make that okay,
+      but I wanted to do something thoughtful
+      instead of just letting it pass.
+    </p>
+
+    <p>
+      I want to make time for you, make you smile,
+      and have a little moment that's just ours.
+    </p>
+
+    <div class="divider"></div>
+
+    <p><em>So, may I make it up to you today?</em></p>
+
+    <h1 style="font-size: 30px;">
+      Will you go on a date with me?
+    </h1>
+
+    <button onclick="acceptDate()">
+      Yes, mi amor ♡
+    </button>
+
+    <button class="secondary" onclick="revealNote()">
+      Hmm, convince me...
+    </button>
+
+    <section id="reveal">
+      <p id="message"></p>
+    </section>
+
+    <div class="signature">
+      Made with love, just for you ♡
+    </div>
+  </main>
+
+  <script>
+    function acceptDate() {
+      document.getElementById("message").textContent =
+        "YAY. You, me, today. Let’s make a little memory together. ♡";
+      document.getElementById("reveal").style.display = "block";
+    }
+
+    function revealNote() {
+      document.getElementById("message").textContent =
+        "I come with kisses, affection, and a genuine attempt to make today lovely. Your move, handsome. ♡";
+      document.getElementById("reveal").style.display = "block";
+    }
+  </script>
+</body>
+</html>
