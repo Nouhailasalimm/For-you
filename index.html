@@ -146,17 +146,33 @@
   </main>
 
   <script>
-    function acceptDate() {
-      document.getElementById("message").textContent =
-        "My love, you have chosen wisely :p. You, me, today, let's have our e-date.";
-      document.getElementById("reveal").style.display = "block";
-    }
 
-    function revealNote() {
-      document.getElementById("message").textContent =
-        "I can show you my tits? :/";
-      document.getElementById("reveal").style.display = "block";
-    }
+function acceptDate() {
+  document.getElementById("message").textContent =
+    "My love, you have chosen wisely :p. You, me, today, let's have our e-date.";
+
+  document.getElementById("reveal").style.display = "block";
+
+  window.open(
+    "https://wa.me/212708849079?text=" +
+    encodeURIComponent("I accept the e-date, my love ❤️"),
+    "_blank"
+  );
+}
+
+function revealNote() {
+  document.getElementById("message").textContent =
+    "I can show you my tits? :/";
+
+  document.getElementById("reveal").style.display = "block";
+
+  window.open(
+    "https://wa.me/212708849079?text=" +
+    encodeURIComponent("I chose Hmm, convince me... 😏"),
+    "_blank"
+  );
+}
+
   </script>
 </body>
 </html>
